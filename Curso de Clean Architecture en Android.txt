@@ -1,0 +1,173 @@
+Puedes revisar y  las respuestas. Al terminar presiona “Calificar respuestas” para enviar las preguntas y conocer tu puntuación.
+1.
+¿Clean Architecture solo puede ser aplicado en Kotlin?
+Falso
+
+2.
+¿Clean Architecture solo puede ser aplicado en Android?
+Falso
+
+3.
+¿Clean Architecture solo nos sirve para proyectos muy grandes?
+Falso
+
+	4.
+	¿Qué indica el principio de abstracción?
+	Niveles externos deben contener la lógica de negocio mientras que niveles internos deben contener los detalles de implementación.
+	https://platzi.com/clases/2019-clean-architecture/32019-que-es-clean-architecture/
+Circulos internos-logica empresarial
+circulos externos-detalles de implementación
+
+	5.
+	¿Qué indica la regla de dependencia?
+	Un nivel interno debe saber todo acerca de un nivel externo.
+	https://platzi.com/clases/2019-clean-architecture/32019-que-es-clean-architecture/
+	Un nivel externo debe saber todo acerca de un nivel interno
+Dependency Rule: “El código fuente sólo puede apuntar hacia adentro“.
+Un circulo depende de su circulo mas interno directamente
+	
+6.
+¿Qué ventajas obtenemos al utilizar Clean Architecture en nuestros proyectos?
+Todas las opciones.
+
+7.
+Esta biblioteca se basa en los patrones de diseño Iterator y Observable, y nos facilita el manejo de flujos de datos y eventos.
+RxJava
+
+8.
+¿Cuál oración describe mejor el siguiente código?
+
+... observeOn(AndroidSchedulers.mainThread()) ... 
+Especifica que el observable será percibido en el hilo principal de la aplicación (Main).
+
+9.
+¿A qué principio hace referencia: "Un componente debe estar abierto a extensión, pero cerrado para modificación"?
+Principio de Abierto/Cerrado.
+
+10.
+¿A qué principio hace referencia: "Las clases hijas deben poder sustituirse por sus clases padre"?
+Principio de Sustitución de Liskov.
+
+	11.
+	¿A qué principio hace referencia: "Un cliente solo debe conocer los métodos que va a utilizar y no aquellos que no utilizará"?
+	Principio de Responsabilidad Única.
+	https://platzi.com/clases/2019-clean-architecture/31853-principios-solid/
+Principio de Segregación de Interfaces
+
+12.
+¿A qué principio hace referencia: "Ni clases de alto nivel deben de depender de las clases de bajo nivel ni viceversa, ambas deberían depender de abstracciones"?
+Principio de Inversión de Dependencias.
+
+	13.
+	¿En cuál capa colocamos los View Models?
+	Capa de casos de uso
+https://platzi.com/clases/2019-clean-architecture/31855-introduccion-a-la-capa-de-presentacion/
+capa de presentacion
+
+14.
+¿A cuál capa se le conoce también como capa de interacciones o "Interactors"?
+Capa de casos de uso
+
+15.
+Es altamente recomendable utilizar las mismas entidades que se usan en Room o Retrofit en las vistas.
+Falso
+
+16.
+¿Cuál es la principal función de las clases Mapper implementadas en el proyecto?
+Transformar un tipo de objeto en otro.
+
+	17.
+	¿Cuál oración describe mejor el siguiente código?
+	fun EpisodeServer.toEpisodeDomain() = Episode(id, name)
+	Esta función convierte un objeto episodio de tipo dominio en otro de tipo servidor.
+	https://platzi.com/clases/2019-clean-architecture/31860-introduccion-a-la-capa-de-dominio/
+	Convierte un objeto episodio de tipo dominio a otro tipo episodio
+	convierte objeto episodio tipo dominio a otro tipo parcelable
+Convierte objeto episodio tipo server a tipo dominio
+
+	18.
+	¿En cuál capa establecemos nuestros repositorios?
+	Capa de framework
+	https://platzi.com/clases/2019-clean-architecture/31862-introduccion-a-la-capa-de-datos/
+Capa de datos
+
+19.
+¿En cuál capa se definen los contratos o abstracciones de las fuentes de datos?
+Capa de datos
+
+20.
+¿Cuál oración describe mejor el siguiente código?
+
+fun getAllFavoriteCharacters(): List <character>= localCharacterDataSource.getAllFavoriteCharacters()
+Este método devuelve un listado de personajes a partir de una fuente local de datos sin especificar.
+
+21.
+¿Cuál es una biblioteca de manejo de imágenes para Android usado en el proyecto?
+Glide
+
+22.
+¿Cuál es una biblioteca para manejar bases de datos SQLite de una manera más sencilla en Android?
+Room
+
+23.
+¿Cuál es una biblioteca que contiene un cliente HTTP de tipo seguro para Android y Java?
+Retrofit
+
+24.
+¿Cuáles son las bibliotecas necesarias para utilizar en nuestro proyecto inyección de dependencias?
+"com.google.dagger:dagger-compiler:2.x" "com.google.dagger:dagger:2.x"
+
+25.
+¿Cuál anotación indica que solo habrá una instancia en la aplicación?
+@Singleton
+
+26.
+¿Cuál anotación define una clase que contribuye al grafo del objeto Dagger?
+@Module
+
+27.
+¿Cuál anotación se usa para facilitar el objeto que será inyectado?
+@Provides
+
+28.
+¿Cuál anotación indica los módulos que conformarán el grafo?
+@Component
+
+	29.
+	¿Cuál anotación nos permite manejar dependencias que solo nos interesa durante el tiempo Activities o Fragments?
+	@Module
+	https://platzi.com/clases/2019-clean-architecture/31869-introduccion-a-la-inyeccion-de-dependencias/
+@subcomponent
+
+30.
+Realizar solo pruebas unitarias es más que suficiente para saber si nuestro proyecto funciona.
+Falso.
+
+¿Qué parámetro se proporciona al siguiente caso de uso?
+private val characterRepository: CharacterRepository
+
+¿A qué principio hace referencia: "Una función, clase o módulo debería tener una y sólo una razón para cambiar"?
+Principio de responsabilidad unica
+
+¿En cuál capa se alojan los modelos de negocio?
+capa de casos de uso
+
+¿En cuál capa se definen las acciones que el usuario puede realizar?
+capa de casos de uso
+
+¿Cuál es una biblioteca que facilita la distribución de dependencias utilizando inyección?
+Dagger
+
+¿En cuál capa implementamos bibliotecas externas y definimos el comportamiento de las interfaces de las fuentes de datos?
+capa de framework
+
+Se encarga de mediar entre las fuentes de datos y los casos de uso:
+Repositorio
+
+	El siguiente código realiza la implementación de la interfaz LocalCharacterDataSource, ¿en qué capa se realiza dicha implementación?
+	class CharacterRoomDataSource(database: CharacterDatabase): LocalCharacterDataSource { ... } 
+	capa de datos
+Framework
+
+¿Cuál capa interactúa con la interfaz del usuario?
+presentacion
